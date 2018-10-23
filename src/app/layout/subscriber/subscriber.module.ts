@@ -6,6 +6,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SubscriberRoutingModule} from './subscriber-routing.module';
 import { SubscriberComponent} from './subscriber.component';
 import { PageHeaderModule } from '../../shared';
+import { DataTablesModule } from 'angular-datatables';
 
 @NgModule({
   imports: [
@@ -14,7 +15,8 @@ import { PageHeaderModule } from '../../shared';
     ReactiveFormsModule,
     FormsModule,
     NgbModule.forRoot(),
-    PageHeaderModule
+    PageHeaderModule,
+    DataTablesModule
   ],
   declarations: [SubscriberComponent]
 })
